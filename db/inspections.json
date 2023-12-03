@@ -1,0 +1,20 @@
+[
+  {
+    "inspection_id": 1,
+    "bus_id": 5,
+    "insp_date": "2023-11-24T00:00:00.000Z",
+    "insp_comment": "alles gut"
+  },
+  {
+    "inspection_id": 2,
+    "bus_id": 18,
+    "insp_date": "2023-11-24T00:00:00.000Z",
+    "insp_comment": "alles sehr gute!"
+  },
+  {
+    "inspection_id": 3,
+    "bus_id": 2,
+    "insp_date": "2023-11-24T00:00:00.000Z",
+    "insp_comment": "schlecht"
+  }
+]

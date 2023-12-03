@@ -1,0 +1,39 @@
+<h1>Inspections</h1>
+<main>
+    <form (submit)="addInspection()">
+
+        <input
+        [(ngModel)]="inspectionBus"
+        placeholder="Bus ID"
+        name="inspBus"
+        type="number">
+
+        <input
+        [(ngModel)]="inspectionDate"
+        placeholder="Date"
+        name="inspDate"
+        type="date">  
+
+        <input 
+        [(ngModel)]="inspectionComment"
+        placeholder="Comments about bus' condition"
+        name="inspComment"> 
+
+        <button>ADD</button>
+    </form>
+
+    <div *ngFor="let insp of inspections">
+        
+        <input [(ngModel)]="insp.bus_id">
+        <input [(ngModel)]="insp.insp_date">
+        <input [(ngModel)]="insp.insp_comment">
+
+        <button (click)="saveInspection(insp)">
+            Save
+        </button>
+        <button (click)="deleteInspection(insp)">
+            Delete
+        </button>
+    </div>
+
+</main>
